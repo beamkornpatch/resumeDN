@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — กรพัชร เรือ่งเดชรังษี</title>
+  <style>
+    :root{--bg:#0a0a0a;--panel:#111;--accent:#ffd200;--muted:#bdbdbd;--maxw:900px}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);color:#fff;line-height:1.45;padding:36px;display:flex;justify-content:center}
+    .card{width:100%;max-width:var(--maxw);background:linear-gradient(180deg,var(--panel),#0b0b0b);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:320px 1fr;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+    .side{background:#070707;padding:28px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .mark{width:64px;height:64px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#111;font-weight:700}
+    h1{margin:8px 0 0;font-size:20px}
+    h2{font-size:14px;color:var(--accent);margin:18px 0 8px}
+    p.small{color:var(--muted);font-size:13px;margin:6px 0}
+    .contact, .skills{margin-top:12px}
+    .skill-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.03)}
+    .main{padding:28px}
+    .headline{display:flex;justify-content:space-between;align-items:center}
+    .title{font-size:18px}
+    .section{margin-top:18px}
+    .section h3{color:var(--accent);margin:0 0 8px}
+    .card-item{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-bottom:10px}
+    .meta{color:var(--muted);font-size:13px}
+    .download{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#111;text-decoration:none;font-weight:600}
+    @media(max-width:800px){
+      .card{grid-template-columns:1fr;}
+      .side{order:2}
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <aside class="side">
+      <div class="logo">
+        <img src="myprof.jpg" alt="Profile photo" style="width:60px;height:70px;border-radius:8px;object-fit:cover;" />
+        <div>
+          <h1>กรพัชร เรืองเดชรังษี</h1>
+          <p class="small">นักศึกษาปี 3 — สาขา: MC</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>ช่องทางการติดต่อ</h2>
+        <p class="small">โทร: 092-247-0774</p>
+        <p class="small">ที่อยู่: 287 ถนนบางบอน3 ซอย 5 แขวงบางบอนเหนือ เขตบางบอน กรุงเทพฯ 10150</p>
+        <p class="small">อีเมล: kornpatch.rdrs@gmail.com</p>
+        <a class="download" href="ResumeDN.pdf" download>ดาวน์โหลด PDF</a>
+      </div>
+
+      <div class="skills">
+        <h2>ทักษะ</h2>
+        <div class="skill-item"><div>HTML / CSS / C# / Python</div><div class="meta">ปานกลาง</div></div>
+        <div class="skill-item"><div>SQL / Database Management</div><div class="meta">ปานกลาง</div></div>
+        <div class="skill-item"><div>Microsoft Visio</div><div class="meta">ปานกลาง</div></div>
+        <div class="skill-item"><div>Microsoft Word / Excel/ PowerPoint</div><div class="meta">ดี</div></div>
+
+        <h2 style="margin-top:14px">ภาษา</h2>
+        <p class="small">ไทย (เชี่ยวชาญ) • อังกฤษ (ปานกลาง)</p>
+
+        <h2 style="margin-top:14px">สิ่งที่สนใจ</h2>
+        <p class="small">เขียนโค้ด, ออกแบบเกม, ทำข้อมูลธุรกิจ, Data Analysis</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="headline">
+        <div>
+          <div class="title">สิ่งที่สนใจ</div>
+            <p class="small">เขียนโค้ด+ออกแบบเกม</p>
+            <p class="small">ทำข้อมูลเกี่ยวกับด้านการทำธุรกิจ</p>
+            <p class="small">เขียนโค้ดเกี่ยวกับเครื่องจักร</p>
+            <p class="small">Data Analysis</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <h3>ประสบการณ์ / โปรเจกต์</h3>
+        <div class="card-item">
+          <strong>ทําเกม "Super Battle City"</strong>
+          <div class="meta">วิชา Object Oriented Programming — ใช้ C# และ OOP</div>
+          <p class="small">รายละเอียด: ออกแบบระบบเกม เขียนโค้ดด้วย C# ตามแนวคิด OOP</p>
+        </div>
+
+        <div class="card-item">
+          <strong>ระบบการจัดการร้านกาแฟ</strong>
+          <div class="meta">วิชา Database Management System — ออกแบบฐานข้อมูล, ER Diagram, สร้าง Schema</div>
+          <p class="small">ใช้ Microsoft Visio ในการออกแบบโครงสร้างและออกแบบงานจริง</p>
+        </div>
+
+        <div class="card-item">
+          <strong>ระบบแนะนำอาหาร + จองคิว</strong>
+          <div class="meta">วิชา System Analysis and Design — วิเคราะห์ความต้องการ, Use Case, Flowchart</div>
+          <p class="small">ออกแบบ Flowchart และ Diagram แสดงกระบวนการสำคัญ</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>การศึกษา</h3>
+        <div class="card-item">
+          <strong>ปริญญาตรี</strong>
+          <div class="meta">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ — GPAX: 3.09</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>ทักษะเพิ่มเติม / งานที่เคยทำ</h3>
+        <div class="card-item">
+          <ul>
+            <li>ออกแบบฐานข้อมูลและ ER Diagram</li>
+            <li>วิเคราะห์ความต้องการผู้ใช้, Use Case และ Flowchart</li>
+            <li>Database schema design และ Microsoft Visio</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>งานอดิเรก</h3>
+        <div class="card-item">
+          <p class="small">ฟังพอดแคสต์, ดูหนัง, เล่นเกมเพื่อผ่อนคลาย</p>
+        </div>
+      </section>
+    </main>
+  </article>
+</body>
+</html>
